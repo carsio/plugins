@@ -2,7 +2,7 @@
   "name": "sharingan",
   "displayName": "Sharingan",
   "description": "Cataloga, replica e transplanta funcionalidades de um projeto autorizado, com skills especializadas, subagentes e comandos $sharingan.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "repository": "https://github.com/carsio/plugins/tree/main/plugins/sharingan",
   "homepage": "https://github.com/carsio/plugins/tree/main/plugins/sharingan",
   "icon": "./assets/logo.png",

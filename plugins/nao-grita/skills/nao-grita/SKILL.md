@@ -7,8 +7,6 @@ description: Nunca assinar commits, merge requests ou qualquer texto com nome de
 
 Não assine. Não se nomeie. Não mencione IA.
 
-O slash command desta política é `aplica-nao-grita`. Esta skill chama-se `nao-grita`. Não trate os dois nomes como a mesma coisa.
-
 ## Commits
 
 - Mensagem só sobre a mudança.

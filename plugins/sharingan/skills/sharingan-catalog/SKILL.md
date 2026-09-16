@@ -7,7 +7,7 @@ description: Inventariar um projeto autorizado e catalogar funcionalidades com I
 
 Somente leitura. Reconstrua as funcionalidades a partir do codigo, testes, rotas, banco, configuracoes e documentacao; nao dependa apenas do README.
 
-Delegue varreduras grandes ao subagente `kakashi`. Aplique as exclusoes e checagens de permissao da skill `sharingan` antes de ler segredos ou dados de producao.
+Delegue varreduras grandes ao subagente `kakashi`. Aplique as exclusoes e checagens de permissao da skill `sharingan` antes de ler segredos ou dados de producao. Os slash commands desta skill sao `/sharingan-list` e `/sharingan-inspect`, nao `/sharingan-catalog`.
 
 ## Inventario
 

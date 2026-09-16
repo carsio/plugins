@@ -25,15 +25,22 @@ Sempre que o usuario executar `$sharingan help`, mostre esta tabela com o comand
 | `$sharingan validate` | Validar integracao | Executa verificacoes, testes, lint, tipos e build, alem de revisar a qualidade da integracao. |
 | `$sharingan audit` | Auditar projeto | Revisa licencas, segredos, referencias antigas, dependencias, acoplamento, duplicacao e codigo morto. |
 
-## Skills correspondentes
+## Skills e slash commands correspondentes
 
-| Comando | Skill | Subagente |
-| --- | --- | --- |
-| `list`, `inspect` | `sharingan-catalog` | `kakashi` |
-| `compare`, `plan`, `integrate` | `sharingan-transplant` | `madara`, `danzo` |
-| `mirror` | `sharingan-mirror` | `danzo` |
-| `brand` | `sharingan-brand` | `obito` |
-| `validate`, `audit` | `sharingan-validate` | `itachi` |
+Os slash commands nao reutilizam o nome da skill. Nao invoque `/sharingan-catalog`, `/sharingan-mirror`, `/sharingan-transplant`, `/sharingan-brand` nem `/sharingan-validate` — esses nomes sao so de skills.
+
+| `$sharingan` | Slash command | Skill | Subagente |
+| --- | --- | --- | --- |
+| `help` | `/sharingan-help` | `sharingan` | — |
+| `list` | `/sharingan-list` | `sharingan-catalog` | `kakashi` |
+| `inspect` | `/sharingan-inspect` | `sharingan-catalog` | `kakashi` |
+| `compare` | `/sharingan-compare` | `sharingan-transplant` | `madara` |
+| `plan` | `/sharingan-plan` | `sharingan-transplant` | `madara` |
+| `integrate` | `/sharingan-integrate` | `sharingan-transplant` | `madara`, `danzo` |
+| `mirror` | `/sharingan-clone` | `sharingan-mirror` | `danzo` |
+| `brand` | `/sharingan-rebrand` | `sharingan-brand` | `obito` |
+| `validate` | `/sharingan-check` | `sharingan-validate` | `itachi` |
+| `audit` | `/sharingan-audit` | `sharingan-validate` | `itachi` |
 
 ## Regras de interpretacao
 

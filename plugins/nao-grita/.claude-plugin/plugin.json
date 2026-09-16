@@ -16,6 +16,5 @@
     "attribution",
     "no-ai-signature"
   ],
-  "skills": "./skills/",
-  "commands": "./commands/"
+  "skills": "./skills/"
 }

@@ -33,11 +33,32 @@ Leia a skill especializada do modo escolhido por completo antes de modificar arq
 
 Aplique a regra `sharingan-safety` em qualquer modo que copie ou altere arquivos.
 
+## Skills, slash commands e `$sharingan`
+
+Sao tres coisas diferentes. Nunca trate o nome de uma skill como slash command, nem o inverso:
+
+- **Skills** (`sharingan`, `sharingan-catalog`, `sharingan-mirror`, `sharingan-transplant`, `sharingan-brand`, `sharingan-validate`) sao lidas e aplicadas.
+- **Slash commands** em `commands/` disparam a skill certa. Os nomes sao propositalmente distintos dos nomes das skills, porque agentes se perdem quando os dois coincidem.
+- **`$sharingan <comando>`** e sintaxe conversacional interpretada por esta skill, nao um executavel de shell.
+
+| Slash command | `$sharingan` | Skill |
+| --- | --- | --- |
+| `/sharingan-help` | `help` | `sharingan` |
+| `/sharingan-list` | `list` | `sharingan-catalog` |
+| `/sharingan-inspect` | `inspect` | `sharingan-catalog` |
+| `/sharingan-compare` | `compare` | `sharingan-transplant` |
+| `/sharingan-plan` | `plan` | `sharingan-transplant` |
+| `/sharingan-integrate` | `integrate` | `sharingan-transplant` |
+| `/sharingan-clone` | `mirror` | `sharingan-mirror` |
+| `/sharingan-rebrand` | `brand` | `sharingan-brand` |
+| `/sharingan-check` | `validate` | `sharingan-validate` |
+| `/sharingan-audit` | `audit` | `sharingan-validate` |
+
 ## Comandos curtos
 
 Aceite invocacoes no formato `$sharingan <comando>`. Quando o usuario usar esse formato, leia [references/commands.md](references/commands.md) por completo e aplique a semantica do comando e de seus parametros.
 
-Os comandos sao atalhos conversacionais da skill, nao executaveis do shell. Continue aceitando pedidos em linguagem natural. Se o texto explicito do usuario complementar ou contrariar um valor padrao do comando, o texto explicito prevalece.
+Os comandos `$sharingan` sao atalhos conversacionais da skill, nao executaveis do shell. Continue aceitando pedidos em linguagem natural. Se o texto explicito do usuario complementar ou contrariar um valor padrao do comando, o texto explicito prevalece.
 
 ## Definir a operacao
 

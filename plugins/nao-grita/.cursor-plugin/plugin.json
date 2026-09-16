@@ -24,6 +24,5 @@
     "privacy"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
   "rules": "./rules/"
 }

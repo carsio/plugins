@@ -4,6 +4,8 @@ Cataloga, replica e transplanta funcionalidades de um projeto autorizado. O icon
 
 Nao use para copiar software sem permissao ou contornar licencas.
 
+Slash commands e skills tem nomes diferentes de proposito: agentes se perdem quando os dois coincidem.
+
 ## Skills
 
 - `sharingan` — orquestra modos e comandos `$sharingan`
@@ -21,8 +23,23 @@ Nao use para copiar software sem permissao ou contornar licencas.
 - `itachi` — audita licencas e segredos
 - `danzo` — executa o espelho ou o transplante
 
-## Comandos
+## Comandos conversacionais
 
 `$sharingan help`, `list`, `inspect`, `compare`, `plan`, `integrate`, `mirror`, `brand`, `validate`, `audit`.
 
-No Cursor e no Claude, os slash commands equivalentes estao em `commands/`.
+## Slash commands
+
+No Cursor e no Claude, os slash commands equivalentes nao reutilizam o nome das skills:
+
+| Slash command | `$sharingan` | Skill |
+| --- | --- | --- |
+| `/sharingan-help` | `help` | `sharingan` |
+| `/sharingan-list` | `list` | `sharingan-catalog` |
+| `/sharingan-inspect` | `inspect` | `sharingan-catalog` |
+| `/sharingan-compare` | `compare` | `sharingan-transplant` |
+| `/sharingan-plan` | `plan` | `sharingan-transplant` |
+| `/sharingan-integrate` | `integrate` | `sharingan-transplant` |
+| `/sharingan-clone` | `mirror` | `sharingan-mirror` |
+| `/sharingan-rebrand` | `brand` | `sharingan-brand` |
+| `/sharingan-check` | `validate` | `sharingan-validate` |
+| `/sharingan-audit` | `audit` | `sharingan-validate` |
