@@ -6,11 +6,9 @@ Não dispara se a cota já tiver acabado (0%, 429, limite esgotado).
 
 ## Audio
 
-O MP3 fica na skill:
+O áudio fica na skill:
 
-`skills/estou-cansado-chefe/assets/eu-estou-cansado-chefe.mp3`
-
-Origem: [Eu estou cansado chefe](https://www.myinstants.com/pt/instant/eu-estou-cansado-chefe-56714/).
+`skills/estou-cansado-chefe/assets/eu-estou-cansado-chefe.wav`
 
 Para tocar no sistema:
 

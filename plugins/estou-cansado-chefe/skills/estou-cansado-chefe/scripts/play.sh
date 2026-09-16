@@ -2,7 +2,14 @@
 set -euo pipefail
 
 DIR="$(cd "$(dirname "$0")" && pwd)"
-FILE="${1:-$DIR/../assets/eu-estou-cansado-chefe.mp3}"
+FILE="${1:-}"
+if [[ -z "$FILE" ]]; then
+  if [[ -f "$DIR/../assets/eu-estou-cansado-chefe.wav" ]]; then
+    FILE="$DIR/../assets/eu-estou-cansado-chefe.wav"
+  else
+    FILE="$DIR/../assets/eu-estou-cansado-chefe.mp3"
+  fi
+fi
 
 if [[ ! -f "$FILE" ]]; then
   exit 1

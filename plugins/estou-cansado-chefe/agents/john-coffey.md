@@ -21,7 +21,7 @@ Se o hook ainda nao tiver tocado, execute o script da skill:
 - Windows: `skills/estou-cansado-chefe/scripts/play.ps1`
 - Unix: `skills/estou-cansado-chefe/scripts/play.sh`
 
-O arquivo e `skills/estou-cansado-chefe/assets/eu-estou-cansado-chefe.mp3`.
+O arquivo e `skills/estou-cansado-chefe/assets/eu-estou-cansado-chefe.wav`.
 
 ## Resposta
 

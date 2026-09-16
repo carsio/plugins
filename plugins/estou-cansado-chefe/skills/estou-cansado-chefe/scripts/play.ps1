@@ -5,17 +5,26 @@ param(
 
 $ErrorActionPreference = "SilentlyContinue"
 
-if ([string]::IsNullOrWhiteSpace($Path)) {
-  $Path = Join-Path $PSScriptRoot "..\assets\eu-estou-cansado-chefe.mp3"
+function Get-AudioPath {
+  param([string]$Preferred)
+  $dir = Join-Path $PSScriptRoot "..\assets"
+  $candidates = @()
+  if (-not [string]::IsNullOrWhiteSpace($Preferred)) { $candidates += $Preferred }
+  $candidates += @(
+    (Join-Path $dir "eu-estou-cansado-chefe.wav"),
+    (Join-Path $dir "eu-estou-cansado-chefe.mp3"),
+    (Join-Path $dir "eu-estou-cansado-chefe.mpeg")
+  )
+  foreach ($item in $candidates) {
+    if (Test-Path -LiteralPath $item) {
+      return (Resolve-Path -LiteralPath $item).Path
+    }
+  }
+  return $null
 }
 
-try {
-  $Path = (Resolve-Path -LiteralPath $Path).Path
-} catch {
-  exit 1
-}
-
-if (-not (Test-Path -LiteralPath $Path)) { exit 1 }
+$Path = Get-AudioPath -Preferred $Path
+if ([string]::IsNullOrWhiteSpace($Path)) { exit 1 }
 
 if (-not $Wait) {
   Start-Process -FilePath "powershell.exe" -WindowStyle Hidden -ArgumentList @(
@@ -29,35 +38,38 @@ if (-not $Wait) {
   exit 0
 }
 
+if ($Path -match '\.wav$') {
+  try {
+    $player = New-Object System.Media.SoundPlayer
+    $player.SoundLocation = $Path
+    $player.Load()
+    $player.PlaySync()
+    exit 0
+  } catch {}
+}
+
+$ffplay = Get-Command ffplay.exe -ErrorAction SilentlyContinue
+if ($ffplay) {
+  & $ffplay.Source -nodisp -autoexit -loglevel quiet -- $Path
+  if ($LASTEXITCODE -eq 0) { exit 0 }
+}
+
 try {
-  Add-Type -AssemblyName PresentationCore | Out-Null
-  $player = New-Object System.Windows.Media.MediaPlayer
-  $player.Volume = 1
-  $player.Open([uri]$Path)
-  $player.Play()
-  $deadline = (Get-Date).AddSeconds(8)
-  while (-not $player.NaturalDuration.HasTimeSpan -and (Get-Date) -lt $deadline) {
-    Start-Sleep -Milliseconds 80
-  }
-  if ($player.NaturalDuration.HasTimeSpan) {
-    Start-Sleep -Milliseconds ([int]($player.NaturalDuration.TimeSpan.TotalMilliseconds + 400))
-  } else {
-    Start-Sleep -Seconds 6
-  }
-  $player.Stop()
-  $player.Close()
+  $code = @"
+using System;
+using System.Text;
+using System.Runtime.InteropServices;
+public static class CansadoMci {
+  [DllImport("winmm.dll", CharSet = CharSet.Unicode)]
+  public static extern int mciSendString(string command, StringBuilder returnValue, int returnLength, IntPtr hwndCallback);
+}
+"@
+  Add-Type -TypeDefinition $code -ErrorAction Stop
+  $alias = "cansado" + [Guid]::NewGuid().ToString("N").Substring(0, 8)
+  [void][CansadoMci]::mciSendString("open `"$Path`" type mpegvideo alias $alias", $null, 0, [IntPtr]::Zero)
+  [void][CansadoMci]::mciSendString("play $alias wait", $null, 0, [IntPtr]::Zero)
+  [void][CansadoMci]::mciSendString("close $alias", $null, 0, [IntPtr]::Zero)
   exit 0
 } catch {}
 
-try {
-  $wmp = New-Object -ComObject WMPlayer.OCX
-  $wmp.URL = $Path
-  $wmp.settings.volume = 100
-  $wmp.controls.play()
-  Start-Sleep -Seconds 8
-  $wmp.controls.stop()
-  exit 0
-} catch {}
-
-Start-Process -FilePath $Path | Out-Null
-exit 0
+exit 1

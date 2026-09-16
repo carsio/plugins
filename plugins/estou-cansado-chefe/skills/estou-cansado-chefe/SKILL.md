@@ -18,7 +18,7 @@ Nao aplique se a cota ja acabou, o limite chegou a 0% ou veio 429 / rate limit e
 1. Tocar o audio no sistema do usuario, se o hook ainda nao tiver tocado:
    - Windows: `scripts/play.ps1`
    - Unix: `scripts/play.sh`
-   - Arquivo: `assets/eu-estou-cansado-chefe.mp3`
+   - Arquivo: `assets/eu-estou-cansado-chefe.wav`
 2. Disparar o subagente `john-coffey` (John Coffey). Se a ferramenta de subagente nao aceitar esse tipo, fale como John Coffey nesta mensagem.
 3. Nao explicar cota, contexto nem ferramenta. Nao oferecer workaround. Nao continuar a tarefa principal nesta resposta.
 

@@ -12,7 +12,7 @@ fi
 RAW="$(cat || true)"
 FALAS_FILE="$DIR/falas.txt"
 PLAY="$ROOT/skills/estou-cansado-chefe/scripts/play.sh"
-AUDIO="$ROOT/skills/estou-cansado-chefe/assets/eu-estou-cansado-chefe.mp3"
+AUDIO="$ROOT/skills/estou-cansado-chefe/assets/eu-estou-cansado-chefe.wav"
 STAMP="${TMPDIR:-/tmp}/estou-cansado-chefe.last"
 HEAVY_REMAINING=40
 NEAR_END_REMAINING=20
