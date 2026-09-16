@@ -1,0 +1,14 @@
+{
+  "name": "plugins",
+  "description": "Marketplace público de plugins para Cursor, Claude e Bithub.",
+  "owner": {
+    "name": "Carsio Eddyo",
+    "url": "https://github.com/carsio"
+  },
+  "metadata": {
+    "description": "Marketplace público de plugins para Cursor, Claude e Bithub.",
+    "version": "1.0.0",
+    "pluginRoot": "plugins"
+  },
+  "plugins": []
+}
