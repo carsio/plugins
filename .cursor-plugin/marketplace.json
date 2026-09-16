@@ -17,6 +17,11 @@
       "name": "nao-grita",
       "source": "./plugins/nao-grita",
       "description": "Impede que o agente assine commits, merge requests ou qualquer texto com o próprio nome ou mencione uso de IA."
+    },
+    {
+      "name": "estou-cansado-chefe",
+      "source": "./plugins/estou-cansado-chefe",
+      "description": "Quando a cota de uso acaba, o agente fala como John Coffey em A Espera de um Milagre."
     }
   ]
 }

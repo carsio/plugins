@@ -46,6 +46,22 @@
         "merge-requests",
         "attribution"
       ]
+    },
+    {
+      "name": "estou-cansado-chefe",
+      "source": "./plugins/estou-cansado-chefe",
+      "description": "Quando a cota de uso acaba, o agente fala como John Coffey em A Espera de um Milagre.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Carsio Eddyo"
+      },
+      "category": "productivity",
+      "homepage": "https://github.com/carsio/plugins/tree/main/plugins/estou-cansado-chefe",
+      "keywords": [
+        "hooks",
+        "usage",
+        "quota"
+      ]
     }
   ]
 }

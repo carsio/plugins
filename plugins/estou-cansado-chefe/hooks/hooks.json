@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"${CURSOR_PLUGIN_ROOT}/hooks/estou-cansado.ps1\""
+      }
+    ],
+    "beforeSubmitPrompt": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"${CURSOR_PLUGIN_ROOT}/hooks/estou-cansado.ps1\""
+      }
+    ],
+    "postToolUseFailure": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"${CURSOR_PLUGIN_ROOT}/hooks/estou-cansado.ps1\""
+      }
+    ],
+    "stop": [
+      {
+        "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"${CURSOR_PLUGIN_ROOT}/hooks/estou-cansado.ps1\"",
+        "loop_limit": 1
+      }
+    ]
+  }
+}

@@ -16,6 +16,7 @@ Cada plugin fica em `plugins/<nome>` e precisa de um manifesto próprio (`.curso
 
 - **Sharingan** — cataloga, replica e transplanta funcionalidades de um projeto autorizado, com skills especializadas, subagentes e comandos `$sharingan`.
 - **Não grita** — impede que o agente assine commits, merge requests ou qualquer texto com o próprio nome, ou mencione uso de IA.
+- **Estou cansado, chefe** — hook que percebe cota esgotada e responde com falas de John Coffey em *A Espera de um Milagre*.
 
 ## Como adicionar este marketplace
 
