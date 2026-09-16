@@ -1,0 +1,31 @@
+{
+  "name": "sharingan",
+  "displayName": "Sharingan",
+  "version": "1.0.0",
+  "description": "Cataloga, replica e transplanta funcionalidades de um projeto autorizado, com skills especializadas, subagentes e comandos $sharingan.",
+  "author": {
+    "name": "Carsio Eddyo"
+  },
+  "homepage": "https://github.com/carsio/plugins/tree/main/plugins/sharingan",
+  "repository": "https://github.com/carsio/plugins",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": [
+    "sharingan",
+    "catalog",
+    "clone",
+    "transplant",
+    "rebrand",
+    "features"
+  ],
+  "category": "developer-tools",
+  "tags": [
+    "replication",
+    "integration",
+    "identity"
+  ],
+  "skills": "./skills/",
+  "agents": "./agents/",
+  "commands": "./commands/",
+  "rules": "./rules/"
+}

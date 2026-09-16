@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sharingan"
+  short_description: "Cataloga, replica e transplanta funcionalidades"
+  default_prompt: "Use $sharingan help para ver os comandos de catalogo, replica, integracao, personalizacao e validacao."

@@ -5,8 +5,13 @@
   },
   "metadata": {
     "description": "Marketplace público de plugins para Cursor, Claude e Bithub.",
-    "version": "1.0.0",
-    "pluginRoot": "plugins"
+    "version": "1.0.0"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "sharingan",
+      "source": "./plugins/sharingan",
+      "description": "Cataloga, replica e transplanta funcionalidades de um projeto autorizado."
+    }
+  ]
 }

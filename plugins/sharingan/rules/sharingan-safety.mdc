@@ -1,0 +1,15 @@
+---
+description: Exclusoes de seguranca e licenca ao catalogar, replicar ou transplantar projetos com o plugin Sharingan.
+alwaysApply: false
+---
+
+# Sharingan safety
+
+Quando o usuario pedir replica, transplante, rebrand ou catalogo de um projeto:
+
+- Confirme autorizacao ou licenca antes de copiar codigo.
+- Nunca leve `.git`, historico, `.env`, chaves, tokens, certificados ou dados pessoais.
+- Nao copie `node_modules`, caches, logs, dumps, backups nem binarios regeneraveis.
+- Nao mantenha o remoto `origin` da origem como destino de publicacao da variante.
+- Preserve atribuicoes, avisos de copyright e termos obrigatorios.
+- Pedido de analise ou listagem nao autoriza alterar arquivos.

@@ -12,6 +12,10 @@ O catálogo vive em três manifests na raiz do repositório. Mantenha os arrays 
 
 Cada plugin fica em `plugins/<nome>` e precisa de um manifesto próprio (`.cursor-plugin/plugin.json`, `.claude-plugin/plugin.json` e/ou `.bithub-plugin/plugin.json`), além dos recursos em `skills/`, `commands/`, `agents/`, `rules/`, `hooks/` e `mcp.json` quando existirem.
 
+## Plugins
+
+- **Sharingan** — cataloga, replica e transplanta funcionalidades de um projeto autorizado, com skills especializadas, subagentes e comandos `$sharingan`.
+
 ## Como adicionar este marketplace
 
 **Cursor** — em Customize, adicione `https://github.com/carsio/plugins`.
