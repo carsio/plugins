@@ -2,10 +2,10 @@
   "name": "nao-grita",
   "displayName": "Não grita",
   "description": "Impede que o agente assine commits, merge requests ou qualquer texto com o próprio nome, mencione uso de IA ou deixe rastros de ferramenta.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "repository": "https://github.com/carsio/plugins/tree/main/plugins/nao-grita",
   "homepage": "https://github.com/carsio/plugins/tree/main/plugins/nao-grita",
-  "icon": "./assets/logo.jpg",
+  "icon": "./assets/logo.png",
   "keywords": [
     "git",
     "commits",
@@ -14,5 +14,6 @@
     "no-ai-signature"
   ],
   "skills": "./skills",
+  "commands": "./commands",
   "rules": "./rules"
 }
