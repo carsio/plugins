@@ -11,11 +11,11 @@ Replique o projeto com fidelidade primeiro; personalize depois. O resultado deve
 
 Determine pelo pedido qual resultado o usuario quer:
 
-- **Espelho completo:** replicar o projeto inteiro em um novo destino. Use a skill `sharingan-mirror` e o subagente `integration-surgeon` para a copia.
-- **Catalogo de funcionalidades:** analisar o projeto e listar capacidades separadas, sem modificar codigo. Use a skill `sharingan-catalog` e o subagente `feature-cataloger`.
-- **Transplante seletivo:** integrar uma ou mais funcionalidades escolhidas em outro projeto. Use a skill `sharingan-transplant` e os subagentes `transplant-planner` e `integration-surgeon`.
-- **Personalizacao:** alterar marca, textos, visuais e identificadores de uma replica ou integracao. Use a skill `sharingan-brand` e o subagente `identity-mapper`.
-- **Validacao e auditoria:** conferir licencas, segredos, testes e qualidade. Use a skill `sharingan-validate` e o subagente `license-auditor`.
+- **Espelho completo:** replicar o projeto inteiro em um novo destino. Use a skill `sharingan-mirror` e o subagente `danzo` para a copia.
+- **Catalogo de funcionalidades:** analisar o projeto e listar capacidades separadas, sem modificar codigo. Use a skill `sharingan-catalog` e o subagente `kakashi`.
+- **Transplante seletivo:** integrar uma ou mais funcionalidades escolhidas em outro projeto. Use a skill `sharingan-transplant` e os subagentes `madara` e `danzo`.
+- **Personalizacao:** alterar marca, textos, visuais e identificadores de uma replica ou integracao. Use a skill `sharingan-brand` e o subagente `obito`.
+- **Validacao e auditoria:** conferir licencas, segredos, testes e qualidade. Use a skill `sharingan-validate` e o subagente `itachi`.
 
 Combine modos quando solicitado. Nao interprete um pedido de analise ou listagem como autorizacao para copiar ou alterar codigo.
 
@@ -25,11 +25,11 @@ Leia a skill especializada do modo escolhido por completo antes de modificar arq
 
 | Skill | Subagente | Quando |
 | --- | --- | --- |
-| `sharingan-catalog` | `feature-cataloger` | Inventariar e fichar funcionalidades |
-| `sharingan-mirror` | `integration-surgeon` | Espelhar o projeto inteiro |
-| `sharingan-transplant` | `transplant-planner`, `integration-surgeon` | Planejar e integrar funcionalidades |
-| `sharingan-brand` | `identity-mapper` | Mapear e aplicar identidade |
-| `sharingan-validate` | `license-auditor` | Validar, auditar e revisar qualidade |
+| `sharingan-catalog` | `kakashi` | Inventariar e fichar funcionalidades |
+| `sharingan-mirror` | `danzo` | Espelhar o projeto inteiro |
+| `sharingan-transplant` | `madara`, `danzo` | Planejar e integrar funcionalidades |
+| `sharingan-brand` | `obito` | Mapear e aplicar identidade |
+| `sharingan-validate` | `itachi` | Validar, auditar e revisar qualidade |
 
 Aplique a regra `sharingan-safety` em qualquer modo que copie ou altere arquivos.
 

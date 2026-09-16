@@ -7,7 +7,7 @@ description: Comparar, planejar e integrar funcionalidades selecionadas de um pr
 
 Antes de alterar o destino, leia as instrucoes e mapeie a arquitetura dos dois projetos. Catalogos incompletos devem passar pela skill `sharingan-catalog` primeiro.
 
-Delegue analise somente leitura ao subagente `transplant-planner`. Delegue a implementacao ao `integration-surgeon` depois que o plano for aceito ou o usuario pedir a alteracao.
+Delegue analise somente leitura ao subagente `madara`. Delegue a implementacao ao `danzo` depois que o plano for aceito ou o usuario pedir a alteracao.
 
 ## Comparar e planejar
 

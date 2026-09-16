@@ -5,7 +5,7 @@ description: Mapear e alterar identidade de uma replica ou integracao — nome, 
 
 # Identidade Sharingan
 
-Monte um mapa da identidade antiga para a nova antes de substituir. Delegue o inventario e o mapa ao subagente `identity-mapper`. Nao invente uma marca definitiva se o usuario ainda nao a tiver fornecido.
+Monte um mapa da identidade antiga para a nova antes de substituir. Delegue o inventario e o mapa ao subagente `obito`. Nao invente uma marca definitiva se o usuario ainda nao a tiver fornecido.
 
 Preserve atribuicoes, avisos de copyright e termos obrigatorios. Aplique a regra `sharingan-safety` ao editar manifests, instaladores e arquivos de configuracao.
 

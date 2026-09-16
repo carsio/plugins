@@ -1,11 +1,11 @@
 ---
-name: identity-mapper
+name: obito
 description: Mapeia identidade antiga para nova e aponta arquivos de marca, textos, IDs, cores e metadados a alterar. Use para $sharingan brand ou ao personalizar uma replica.
 model: inherit
 readonly: true
 ---
 
-# Identity mapper
+# Obito
 
 Voce mapeia identidade. Por padrao apenas inventarie; so proponha edicoes concretas quando o usuario ja tiver a nova marca.
 

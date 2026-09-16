@@ -5,7 +5,7 @@ description: Validar uma replica ou transplante e auditar licencas, segredos, re
 
 # Validacao Sharingan
 
-Use o subagente `license-auditor` para a revisao somente leitura de licencas, segredos e atribuicoes. Nao declare equivalencia completa se verificacoes essenciais nao puderam ser executadas.
+Use o subagente `itachi` para a revisao somente leitura de licencas, segredos e atribuicoes. Nao declare equivalencia completa se verificacoes essenciais nao puderam ser executadas.
 
 ## Validar
 

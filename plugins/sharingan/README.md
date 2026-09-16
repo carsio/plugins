@@ -15,11 +15,11 @@ Nao use para copiar software sem permissao ou contornar licencas.
 
 ## Subagentes
 
-- `feature-cataloger`
-- `transplant-planner`
-- `identity-mapper`
-- `license-auditor`
-- `integration-surgeon`
+- `kakashi` — cataloga funcionalidades
+- `madara` — planeja o transplante
+- `obito` — mapeia identidade
+- `itachi` — audita licencas e segredos
+- `danzo` — executa o espelho ou o transplante
 
 ## Comandos
 

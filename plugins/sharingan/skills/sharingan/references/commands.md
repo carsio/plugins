@@ -29,11 +29,11 @@ Sempre que o usuario executar `$sharingan help`, mostre esta tabela com o comand
 
 | Comando | Skill | Subagente |
 | --- | --- | --- |
-| `list`, `inspect` | `sharingan-catalog` | `feature-cataloger` |
-| `compare`, `plan`, `integrate` | `sharingan-transplant` | `transplant-planner`, `integration-surgeon` |
-| `mirror` | `sharingan-mirror` | `integration-surgeon` |
-| `brand` | `sharingan-brand` | `identity-mapper` |
-| `validate`, `audit` | `sharingan-validate` | `license-auditor` |
+| `list`, `inspect` | `sharingan-catalog` | `kakashi` |
+| `compare`, `plan`, `integrate` | `sharingan-transplant` | `madara`, `danzo` |
+| `mirror` | `sharingan-mirror` | `danzo` |
+| `brand` | `sharingan-brand` | `obito` |
+| `validate`, `audit` | `sharingan-validate` | `itachi` |
 
 ## Regras de interpretacao
 

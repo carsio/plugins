@@ -7,7 +7,7 @@ description: Replicar por completo um projeto autorizado em um destino novo, sem
 
 Replique o projeto com fidelidade primeiro; personalize depois. O resultado deve manter o comportamento original, salvo quando o usuario pedir mudancas funcionais.
 
-Siga as checagens de permissao e exclusoes da skill `sharingan`. Use o subagente `integration-surgeon` para a copia quando o destino estiver definido. Depois de espelhar, ofereca `sharingan-brand` e `sharingan-validate`.
+Siga as checagens de permissao e exclusoes da skill `sharingan`. Use o subagente `danzo` para a copia quando o destino estiver definido. Depois de espelhar, ofereca `sharingan-brand` e `sharingan-validate`.
 
 ## Antes de copiar
 
