@@ -15,6 +15,7 @@ Cada plugin fica em `plugins/<nome>` e precisa de um manifesto próprio (`.curso
 ## Plugins
 
 - **Sharingan** — cataloga, replica e transplanta funcionalidades de um projeto autorizado, com skills especializadas, subagentes e comandos `$sharingan`.
+- **Não grita** — impede que o agente assine commits, merge requests ou qualquer texto com o próprio nome, ou mencione uso de IA.
 
 ## Como adicionar este marketplace
 

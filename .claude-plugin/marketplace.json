@@ -29,6 +29,23 @@
         "transplant",
         "rebrand"
       ]
+    },
+    {
+      "name": "nao-grita",
+      "source": "./plugins/nao-grita",
+      "description": "Impede que o agente assine commits, merge requests ou qualquer texto com o próprio nome ou mencione uso de IA.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Carsio Eddyo"
+      },
+      "category": "development",
+      "homepage": "https://github.com/carsio/plugins/tree/main/plugins/nao-grita",
+      "keywords": [
+        "git",
+        "commits",
+        "merge-requests",
+        "attribution"
+      ]
     }
   ]
 }

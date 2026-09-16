@@ -12,6 +12,11 @@
       "name": "sharingan",
       "source": "./plugins/sharingan",
       "description": "Cataloga, replica e transplanta funcionalidades de um projeto autorizado."
+    },
+    {
+      "name": "nao-grita",
+      "source": "./plugins/nao-grita",
+      "description": "Impede que o agente assine commits, merge requests ou qualquer texto com o próprio nome ou mencione uso de IA."
     }
   ]
 }

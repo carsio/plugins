@@ -1,0 +1,17 @@
+---
+description: Nunca mencione IA, modelo ou ferramenta em merge requests, pull requests, issues ou reviews. Sempre ativa.
+alwaysApply: true
+---
+
+# Sem menção de IA em MR e review
+
+Em merge request, pull request, issue, descrição de mudança e comentário de review, nunca escreva que houve uso de IA.
+
+Não use:
+
+- "gerado por", "feito com", "assistido por", "escrito pelo Cursor/Claude/ChatGPT"
+- nome de modelo, produto de agente ou "LLM"
+- seções do tipo AI summary, AI changelog, Copilot notes
+- disclaimers de que um humano deve revisar porque a IA escreveu
+
+O texto descreve só a mudança: o que mudou, por quê, como testar. Sem ferramenta, sem modelo, sem autoria do agente.

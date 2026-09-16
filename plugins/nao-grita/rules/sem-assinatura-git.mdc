@@ -1,0 +1,17 @@
+---
+description: Nunca assine commits, tags ou trailers Git com nome de modelo, produto ou agente. Sempre ativa.
+alwaysApply: true
+---
+
+# Sem assinatura em commits
+
+Nunca coloque o próprio nome, o nome do modelo ou o nome do produto na autoria Git.
+
+Proibido em commits, amend, tags e notes:
+
+- assinar como Cursor, Claude, ChatGPT, GPT, Grok, Copilot, Codex, Gemini, BitHub ou qualquer outro agente
+- `Co-authored-by`, `Signed-off-by`, `Acked-by` ou trailers equivalentes com esses nomes
+- `Made-with`, `Generated-by`, `Assisted-by` apontando para IA
+- mensagem de commit que cite a ferramenta, o modelo ou que o texto foi gerado
+
+A autoria fica só com a identidade Git do usuário (`user.name` / `user.email` já configurados). Não invente um autor, não acrescente coautor e não anuncie assistência.
