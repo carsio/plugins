@@ -1,5 +1,5 @@
 {
-  "description": "Quando a cota acaba, injeta falas de John Coffey.",
+  "description": "Quando o uso esta alto, a cota perto do fim ou o contexto perto do limite, toca o audio e chama John Coffey.",
   "hooks": {
     "SessionStart": [
       {
@@ -21,17 +21,7 @@
         ]
       }
     ],
-    "PostToolUseFailure": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "\"${CLAUDE_PLUGIN_ROOT}/hooks/estou-cansado.sh\""
-          }
-        ]
-      }
-    ],
-    "Stop": [
+    "PreCompact": [
       {
         "hooks": [
           {

@@ -1,12 +1,33 @@
 # Estou cansado, chefe
 
-Plugin com a imagem de John Coffey e um hook que tenta perceber quando a cota de uso acabou. Aí o agente fala como no filme *A Espera de um Milagre*.
+Plugin com o subagente **John Coffey**. Quando o uso está alto, a cota começa a ficar perto do fim ou a janela de contexto chega perto do limite, toca o áudio *Eu estou cansado chefe* e responde como em *A Espera de um Milagre*.
+
+Não dispara se a cota já tiver acabado (0%, 429, limite esgotado).
+
+## Audio
+
+O MP3 fica na skill:
+
+`skills/estou-cansado-chefe/assets/eu-estou-cansado-chefe.mp3`
+
+Origem: [Eu estou cansado chefe](https://www.myinstants.com/pt/instant/eu-estou-cansado-chefe-56714/).
+
+Para tocar no sistema:
+
+```text
+powershell -NoProfile -ExecutionPolicy Bypass -File skills/estou-cansado-chefe/scripts/play.ps1 -Wait
+```
+
+## Subagente
+
+- Nome: **John Coffey**
+- Id: `john-coffey`
 
 ## Hook
 
 Instala em:
 
-- Cursor: `sessionStart`, `beforeSubmitPrompt`, `postToolUseFailure`, `stop`
-- Claude Code: `SessionStart`, `UserPromptSubmit`, `PostToolUseFailure`, `Stop`
+- Cursor: `sessionStart`, `beforeSubmitPrompt`, `preCompact`
+- Claude Code: `SessionStart`, `UserPromptSubmit`, `PreCompact`
 
-O script lê o payload do hook e o cache de uso do Bithub (`com.bithub.app/usage`). Se achar limite em 0%, 429 ou cota esgotada, injeta uma fala começando por **Estou cansado, chefe.**
+O script lê o payload do hook e o cache de uso do Bithub (`com.bithub.app/usage`). Dispara se ainda restar cota e ela estiver em 40% ou menos, ou se o evento for compactação de contexto. Intervalo mínimo entre toques: 12 minutos.

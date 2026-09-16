@@ -21,7 +21,7 @@
     {
       "name": "estou-cansado-chefe",
       "source": "./plugins/estou-cansado-chefe",
-      "description": "Quando a cota de uso acaba, o agente fala como John Coffey em A Espera de um Milagre."
+      "description": "Quando o uso está alto, a cota perto do fim ou o contexto perto do limite, toca o áudio e chama o subagente John Coffey."
     }
   ]
 }

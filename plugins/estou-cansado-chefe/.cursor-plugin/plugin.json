@@ -1,8 +1,8 @@
 {
   "name": "estou-cansado-chefe",
   "displayName": "Estou cansado, chefe",
-  "version": "1.0.0",
-  "description": "Quando a cota de uso acaba, o agente fala como John Coffey em A Espera de um Milagre.",
+  "version": "1.1.0",
+  "description": "Quando o uso está alto, a cota perto do fim ou o contexto perto do limite, toca o áudio e chama o subagente John Coffey.",
   "author": {
     "name": "Carsio Eddyo"
   },
@@ -14,7 +14,8 @@
     "hooks",
     "usage",
     "quota",
-    "green-mile"
+    "green-mile",
+    "john-coffey"
   ],
   "category": "productivity",
   "tags": [
@@ -22,5 +23,6 @@
     "usage"
   ],
   "skills": "./skills/",
+  "agents": "./agents/",
   "hooks": "./hooks/hooks.json"
 }
