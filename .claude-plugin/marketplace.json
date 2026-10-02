@@ -62,6 +62,23 @@
         "usage",
         "quota"
       ]
+    },
+    {
+      "name": "feedbackboard",
+      "source": "./plugins/feedbackboard",
+      "description": "Conecta o MCP remoto do FeedbackBoard para listar, inspecionar e atualizar feedbacks do Kanban.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Carsio Eddyo"
+      },
+      "category": "development",
+      "homepage": "https://github.com/carsio/plugins/tree/main/plugins/feedbackboard",
+      "keywords": [
+        "feedbackboard",
+        "mcp",
+        "feedback",
+        "kanban"
+      ]
     }
   ]
 }

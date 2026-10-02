@@ -22,6 +22,11 @@
       "name": "estou-cansado-chefe",
       "source": "./plugins/estou-cansado-chefe",
       "description": "Quando o uso está alto, a cota perto do fim ou o contexto perto do limite, toca o áudio e chama o subagente John Coffey."
+    },
+    {
+      "name": "feedbackboard",
+      "source": "./plugins/feedbackboard",
+      "description": "Conecta o MCP remoto do FeedbackBoard para listar, inspecionar e atualizar feedbacks do Kanban."
     }
   ]
 }

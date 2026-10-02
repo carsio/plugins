@@ -17,6 +17,7 @@ Cada plugin fica em `plugins/<nome>` e precisa de um manifesto próprio (`.curso
 - **Sharingan** — cataloga, replica e transplanta funcionalidades de um projeto autorizado, com skills especializadas, subagentes e comandos `$sharingan`.
 - **Não grita** — impede que o agente assine commits, merge requests ou qualquer texto com o próprio nome, ou mencione uso de IA.
 - **Estou cansado, chefe** — toca o áudio e chama o subagente John Coffey quando o uso está alto, a cota perto do fim ou o contexto perto do limite. Não dispara se a cota já acabou.
+- **FeedbackBoard** — sobe o MCP remoto do FeedbackBoard; pede o token MCP na instalação (`userConfig`) e expõe as tools da fila de feedbacks.
 
 ## Como adicionar este marketplace
 

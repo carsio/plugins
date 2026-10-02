@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "feedbackboard": {
+      "type": "http",
+      "url": "https://feedbackboard.space/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.api_token}"
+      }
+    }
+  }
+}

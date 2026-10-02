@@ -64,6 +64,24 @@
         "green-mile"
       ],
       "source": "./plugins/estou-cansado-chefe"
+    },
+    {
+      "name": "feedbackboard",
+      "displayName": "FeedbackBoard",
+      "description": "Conecta o MCP remoto do FeedbackBoard para listar, inspecionar e atualizar feedbacks do Kanban.",
+      "version": "1.0.0",
+      "category": "Desenvolvimento",
+      "icon": "./plugins/feedbackboard/assets/logo.png",
+      "repository": "https://github.com/carsio/plugins/tree/main/plugins/feedbackboard",
+      "homepage": "https://github.com/carsio/plugins/tree/main/plugins/feedbackboard",
+      "keywords": [
+        "feedbackboard",
+        "mcp",
+        "feedback",
+        "kanban",
+        "bugs"
+      ],
+      "source": "./plugins/feedbackboard"
     }
   ]
 }
