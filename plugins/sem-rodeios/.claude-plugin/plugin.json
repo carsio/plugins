@@ -1,0 +1,25 @@
+{
+  "name": "sem-rodeios",
+  "version": "1.0.0",
+  "description": "Comandos rápidos para ajustar na hora o tamanho e o tom da resposta: curto, longo, técnico, negócio, didático ou apenas código.",
+  "author": {
+    "name": "Carsio Eddyo",
+    "url": "https://github.com/carsio"
+  },
+  "homepage": "https://github.com/carsio/plugins/tree/main/plugins/sem-rodeios",
+  "repository": "https://github.com/carsio/plugins",
+  "license": "MIT",
+  "keywords": [
+    "sem-rodeios",
+    "tamanho",
+    "tom",
+    "curto",
+    "longo",
+    "tech",
+    "negocio",
+    "didatico",
+    "code"
+  ],
+  "skills": "./skills/",
+  "commands": "./commands/"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "sem-rodeios",
+  "displayName": "Sem Rodeios",
+  "version": "1.0.0",
+  "description": "Ajuste instantâneo do tamanho e tom da resposta do agente: curto, longo, técnico, negócio, didático ou apenas código.",
+  "author": {
+    "name": "Carsio Eddyo"
+  },
+  "homepage": "https://github.com/carsio/plugins/tree/main/plugins/sem-rodeios",
+  "repository": "https://github.com/carsio/plugins",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": [
+    "sem-rodeios",
+    "tamanho",
+    "tom",
+    "curto",
+    "tech",
+    "biz",
+    "didatico",
+    "code"
+  ],
+  "category": "productivity",
+  "tags": [
+    "formatting",
+    "conciseness",
+    "tone",
+    "productivity"
+  ],
+  "skills": "./skills/",
+  "commands": "./commands/",
+  "rules": "./rules/"
+}

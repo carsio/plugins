@@ -82,6 +82,27 @@
         "bugs"
       ],
       "source": "./plugins/feedbackboard"
+    },
+    {
+      "name": "sem-rodeios",
+      "displayName": "Sem Rodeios",
+      "description": "Ajuste instantâneo do tamanho (curto/longo) e tom (técnico, negócio, didático, código) da resposta do agente.",
+      "version": "1.0.0",
+      "category": "Produtividade",
+      "icon": "./plugins/sem-rodeios/assets/logo.png",
+      "repository": "https://github.com/carsio/plugins/tree/main/plugins/sem-rodeios",
+      "homepage": "https://github.com/carsio/plugins/tree/main/plugins/sem-rodeios",
+      "keywords": [
+        "sem-rodeios",
+        "tamanho",
+        "tom",
+        "curto",
+        "tech",
+        "biz",
+        "didatico",
+        "code"
+      ],
+      "source": "./plugins/sem-rodeios"
     }
   ]
 }
