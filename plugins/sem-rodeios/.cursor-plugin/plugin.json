@@ -1,7 +1,7 @@
 {
   "name": "sem-rodeios",
   "displayName": "Sem Rodeios",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ajuste instantâneo do tamanho e tom da resposta do agente: curto, longo, técnico, negócio, didático ou apenas código.",
   "author": {
     "name": "Carsio Eddyo"

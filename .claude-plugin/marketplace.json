@@ -84,7 +84,7 @@
       "name": "sem-rodeios",
       "source": "./plugins/sem-rodeios",
       "description": "Ajuste instantâneo do tamanho (curto/longo) e tom (técnico, negócio, didático, código) da resposta do agente.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Carsio Eddyo"
       },

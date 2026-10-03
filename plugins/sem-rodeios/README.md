@@ -2,7 +2,7 @@
 
 Plugin com comandos rápidos para ajustar instantaneamente o **tamanho** (escrever mais ou escrever menos) e o **tom/modo de falar** (técnico, negócio, didático ou apenas código) do agente, eliminando enrolação, saudações automáticas e introduções clichês.
 
-Compatível com **Cursor**, **Claude Code** e **Bithub**.
+Compatível com **Cursor** e **Claude Code**. Pelo **BitHub**, os comandos também são instalados como skills para **Codex**, **Antigravity CLI** e **Copilot CLI**.
 
 ---
 
@@ -20,6 +20,14 @@ Compatível com **Cursor**, **Claude Code** e **Bithub**.
 | `/calibrar` | Misto | Permite passar parâmetros combinados (ex: `/calibrar tech curto`). |
 
 ---
+
+## Instalação pelo BitHub
+
+Nos plugins globais de Codex e Antigravity, cada comando vira uma skill com o nome do comando (`curto`, `calibrar` etc.). O cliente pode acrescentar o namespace do plugin no menu.
+
+Na instalação por projeto para Codex, Antigravity e Copilot, e na instalação global do Copilot, as skills recebem o prefixo `sem-rodeios-` (por exemplo, `sem-rodeios-curto`). No Codex, selecione a skill no menu de `$`; nos demais, no menu de `/`.
+
+Após atualizar o BitHub, use a ação **Atualizar** do plugin na tela de plugins e abra uma nova sessão para carregar os comandos.
 
 ## Exemplos de Uso
 

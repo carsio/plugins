@@ -1,6 +1,6 @@
 ---
 name: calibrar
-description: Calibra o tamanho e o tom da resposta combinando dimensões (ex: /calibrar tech curto, /calibrar biz longo).
+description: "Calibra o tamanho e o tom da resposta combinando dimensões (ex: /calibrar tech curto, /calibrar biz longo)."
 ---
 
 Aplique a skill `ajuste-resposta`. Este slash command chama-se `calibrar`; a skill orquestradora chama-se `ajuste-resposta`.
