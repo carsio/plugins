@@ -1,0 +1,25 @@
+{
+  "name": "run-forrest-run",
+  "version": "1.0.0",
+  "description": "Analisa o projeto, verifica dependências, diagnostica e configura a máquina do usuário, recomenda ajustes e instala tudo para rodar o projeto com gate obrigatório de confirmação.",
+  "author": {
+    "name": "Carsio Eddyo",
+    "url": "https://github.com/carsio"
+  },
+  "homepage": "https://github.com/carsio/plugins/tree/main/plugins/run-forrest-run",
+  "repository": "https://github.com/carsio/plugins",
+  "license": "MIT",
+  "keywords": [
+    "run-forrest-run",
+    "forrest",
+    "setup",
+    "environment",
+    "dependencies",
+    "onboarding",
+    "doctor",
+    "run"
+  ],
+  "skills": "./skills/",
+  "agents": "./agents/",
+  "commands": "./commands/"
+}

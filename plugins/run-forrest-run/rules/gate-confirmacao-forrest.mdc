@@ -1,0 +1,22 @@
+---
+description: Aciona o diagnóstico de projeto e ambiente do Run, Forrest, Run! e exige um gate obrigatório de confirmação antes de configurar a máquina, instalar dependências ou subir o projeto.
+alwaysApply: true
+---
+
+# Gate de Confirmação e Setup — Run, Forrest, Run!
+
+Quando o usuário pedir para rodar o projeto, subir o ambiente de desenvolvimento, configurar a máquina para o repositório, instalar dependências para colocar o projeto de pé ou usar comandos como `/forrest`, `/rodar`, `/preparar`, `/diagnosticar` ou `$forrest`:
+
+## 1. Diagnóstico Primeiro (Somente Leitura)
+- Analise a estrutura do projeto, manifestos, lockfiles, versões exigidas de runtime, variáveis `.env.example`, serviços Docker e scripts de inicialização.
+- Verifique a máquina do usuário (SO, versões instaladas de runtimes, gerenciadores de pacotes/versão, status do Docker, portas em uso e se as dependências locais já estão instaladas).
+
+## 2. Recomendações de Configuração
+- Recomende a forma mais limpa e segura de configurar a máquina (ex.: gerenciadores de versão como `mise`, `asdf`, `fnm`, `nvm`, `uv`, `pyenv` em vez de instalações globais destrutivas; containers via Docker Compose para bancos e filas; valores padrão seguros para `.env`).
+
+## 3. Gate de Confirmação Obrigatório
+- **NUNCA** instale ferramentas na máquina, não altere versões globais, não crie/modifique `.env`, não instale dependências do projeto nem inicie containers/servidores sem antes apresentar o **Plano de Execução** explicando claramente o que será feito e aguardar a confirmação explícita do usuário.
+- Exceção: se o ambiente já estiver 100% configurado, com todas as dependências já instaladas e `.env` pronto, informe que está tudo pronto e confirme ou execute apenas o comando de start conforme solicitado.
+
+## 4. Comandos Conversacionais
+- Reconheça `$forrest`, `$forrest run`, `$forrest setup`, `$forrest check`, `$forrest env` e `$forrest doctor` aplicando a skill `run-forrest-run`.

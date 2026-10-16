@@ -32,6 +32,11 @@
       "name": "sem-rodeios",
       "source": "./plugins/sem-rodeios",
       "description": "Ajuste instantâneo do tamanho (curto/longo) e tom (técnico, negócio, didático, código) da resposta do agente."
+    },
+    {
+      "name": "run-forrest-run",
+      "source": "./plugins/run-forrest-run",
+      "description": "Analisa o projeto, verifica dependências, diagnostica e configura a máquina do usuário, recomenda ajustes e instala tudo para rodar o projeto com gate obrigatório de confirmação."
     }
   ]
 }
